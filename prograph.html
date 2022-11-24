@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prograph</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="box">
+            <input type="radio" value="1" name="r">1
+            <input type="radio" value="4" name="r">4
+            <input type="radio" value="6" name="r">6
+            <input type="radio" value="10" name="r">10
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas doloremque architecto molestiae error illum,
+            est nulla dicta fugit nam ad nesciunt fugiat eligendi a numquam commodi, modi accusamus ab enim.</p>
+        <p>Dignissimos quia ipsam illo quaerat in laborum eveniet veritatis non alias sapiente itaque possimus beatae
+            eaque eum expedita cumque saepe, incidunt obcaecati magni minima assumenda. Aut ullam possimus iure
+            recusandae?</p>
+        <p>Temporibus, ducimus. Aut qui officia ex omnis fuga! Delectus nobis totam in placeat quos aperiam autem
+            molestiae natus minus corrupti. Nam voluptas dolorem vel vero possimus dicta doloribus eius quae?</p>
+        <p>Distinctio voluptatem, ad id libero quam reprehenderit sequi consequuntur non maiores iste, quasi sit
+            consequatur sed culpa accusantium iure vero aliquam doloribus et rerum laboriosam rem! Accusamus reiciendis
+            debitis tenetur.</p>
+        <p>Minima deleniti velit, magnam ipsam aut qui dicta obcaecati ab, ipsa delectus error quod eum! Obcaecati ad
+            libero inventore modi cupiditate, quas, ducimus, recusandae porro officia necessitatibus voluptas optio
+            eveniet!</p>
+        <p>Ipsam rerum eaque quam. Eveniet ipsum voluptate eaque beatae ratione ipsa nemo harum eum atque sed provident
+            officiis saepe fugit earum tempora, ad omnis! Provident quo praesentium voluptatum suscipit commodi.</p>
+        <p>Nostrum dolorem accusantium aperiam dolor, cupiditate, recusandae voluptatem consequuntur aspernatur laborum
+            illum delectus esse officiis. Nisi quidem repellat earum vero, fugit non? Facilis hic ea atque nihil
+            perspiciatis corrupti quas.</p>
+        <p>Ullam porro quisquam illo iusto natus quaerat, fuga sed nostrum, suscipit asperiores modi amet voluptatum
+            omnis saepe exercitationem rem, alias nemo inventore. Vel illum similique odit praesentium molestiae
+            veritatis deserunt!</p>
+        <p>Porro iste quibusdam placeat dolores temporibus officiis nisi molestiae unde delectus aperiam nesciunt
+            reprehenderit enim, voluptate dolor assumenda ex alias facere repudiandae eum eaque nihil atque ipsam magni
+            quos. Quae?</p>
+
+        <p>Quibusdam iusto deserunt mollitia voluptatum doloribus minima repellat dolorum modi obcaecati nobis ab
+            impedit voluptatibus quisquam in culpa, cupiditate iste cumque porro maxime optio reprehenderit! Libero
+            deleniti nulla earum quo!</p>
+    </div>
+
+<script>
+
+    let radio = document.querySelectorAll("input")
+    let para = document.querySelectorAll("p")
+    console.log(para);
+
+    for(let i =0; i<radio.length; i++){
+        radio[i].onclick = ()=>{
+            let radiovalue = radio[i].value;
+            for(let k=0; k<para.length; k++){
+                para[k].style.color = '#000'
+            }
+            for(let j =0; j<radiovalue; j++){
+                para[j].style.color = 'red';
+            }
+        }
+    }
+
+  
+</script>
+
+
+</body>
+
+</html>
